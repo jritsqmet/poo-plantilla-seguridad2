@@ -14,9 +14,19 @@
 
     <form th:action="@{/usuario/form}" method="post" th:object="${usuario}">
         <div class="mb-3 mt-3">
-            <label >Email:</label>
+            <label >ID:</label>
             <input type="text" class="form-control" th:field="*{id}">
         </div>
+        <div class="mb-3">
+            <label >Usernmae:</label>
+            <input type="text" class="form-control"  th:field="*{username}">
+        </div>
+
+        <div class="mb-3">
+            <label >Rol:</label>
+            <input type="text" class="form-control"  th:field="*{rol}">
+        </div>
+
         <div class="mb-3">
             <label >Password:</label>
             <input type="password" class="form-control"  th:field="*{pass}">

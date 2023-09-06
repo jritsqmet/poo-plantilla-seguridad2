@@ -9,6 +9,8 @@ import lombok.Data;
 public class Usuario {
 
     @Id
-    private String id;
+    private Integer id;
+    private String username;
     private String pass;
+    private String rol;
 }
